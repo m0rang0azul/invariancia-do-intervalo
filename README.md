@@ -117,10 +117,9 @@ $$
 \Delta \bar s^2 = M_{00}(\Delta r)^2 + 2\sum_{i=1}^{3} M_{0i}\Delta x^i\Delta r + \sum_{i=1}^{3}\sum_{j=1}^{3} M_{ij}\Delta x^i \Delta x^j = 0
 $$
 
-Essa expressão precisa ser **zero para qualquer direção** do vetor $(\Delta x, \Delta y, \Delta z)$, não só para uma direção específica. Pense bem no que isso exige: se o raio de luz for disparado na direção $+x$, temos $\Delta y = \Delta z = 0$ e a equação vira uma relação envolvendo só $M_{00}, M_{01}, M_{11}$. Se disparado na direção $-x$, o termo cruzado $M_{01}\Delta x\Delta r$ **troca de sinal** (porque $\Delta x$ trocou de sinal, mas $\Delta r$ continua positivo, é uma distância), enquanto os termos quadráticos ($M_{00}(\Delta r)^2$ e $M_{11}(\Delta x)^2$) não mudam. 
+Essa expressão precisa ser **zero para qualquer direção** do vetor $(\Delta x, \Delta y, \Delta z)$, não só para uma direção específica. Pense bem no que isso exige: se o raio de luz for disparado na direção $+x$, temos $\Delta y = \Delta z = 0$ e a equação vira uma relação envolvendo só $M_{00}, M_{01}, M_{11}$. Se disparado na direção $-x$, o termo cruzado $M_{01}\Delta x\Delta r$ **troca de sinal** (porque $\Delta x$ trocou de sinal, mas $\Delta r$ continua positivo, é uma distância), enquanto os termos quadráticos ($M_{00}(\Delta r)^2$ e $M_{11}(\Delta x)^2$) não mudam.
 
-
-Na dirção $+x$
+Na direção $+x$
 
 $$
 \Delta \bar s^2 = M_{00}(\Delta r)^2 + 2\sum_{i=1}^{3} M_{0i}\Delta x^i\Delta r + \sum_{i=1}^{3}\sum_{j=1}^{3} M_{ij}\Delta x^i \Delta x^j = 0
@@ -138,13 +137,43 @@ $$
 M_{0i} = 0, \quad i = 1,2,3 \quad \text{(1.4a)}
 $$
 
-Ou seja: **não pode haver termos cruzados entre tempo e espaço** na matriz. Com isso, o que resta da equação (agora só com $M_{00}$ e os $M_{ij}$) precisa dar zero para qualquer direção espacial, o que só é possível se:
+Com isso, os termos cruzados entre tempo e espaço desaparecem, e o que resta da expressão é:
 
 $$
-M_{ij} = -M_{00}\delta_{ij}, \quad i,j = 1,2,3 \quad \text{(1.4b)}
+\Delta \bar s^2 = M_{00}(\Delta r)^2 + \sum_{i=1}^{3}\sum_{j=1}^{3} M_{ij}\Delta x^i \Delta x^j = 0
 $$
 
-onde $\delta_{ij}$ é o **delta de Kronecker** (vale 1 se $i=j$, e 0 caso contrário), em outras palavras, a matriz espacial precisa ser **diagonal**, e todas as entradas da diagonal têm que ser iguais a $-M_{00}$. Substituindo essas duas condições de volta na Eq. 1.2, a expressão gigante de 16 termos que você expandiu nas suas notas colapsa para algo muito mais simples:
+Agora precisamos eliminar o $(\Delta r)^2$ em favor dos incrementos espaciais individuais. Para isso, lembramos da definição de distância espacial:
+
+$$
+(\Delta r)^2 = (\Delta x)^2 + (\Delta y)^2 + (\Delta z)^2
+$$
+
+que, em notação de índices, pode ser escrita como
+
+$$
+(\Delta r)^2 = \sum_{i=1}^{3}\sum_{j=1}^{3} \delta_{ij}\Delta x^i \Delta x^j
+$$
+
+onde $\delta_{ij}$ é o **delta de Kronecker** (vale 1 se $i=j$, e 0 caso contrário). Substituindo essa expressão de volta na equação anterior, obtemos:
+
+$$
+\Delta \bar s^2 = M_{00}\sum_{i=1}^{3}\sum_{j=1}^{3} \delta_{ij}\Delta x^i \Delta x^j + \sum_{i=1}^{3}\sum_{j=1}^{3} M_{ij}\Delta x^i \Delta x^j = 0
+$$
+
+Colocando os dois somatórios em evidência:
+
+$$
+\Delta \bar s^2 = \sum_{i=1}^{3}\sum_{j=1}^{3}\left(M_{00}\delta_{ij} + M_{ij}\right)\Delta x^i \Delta x^j = 0
+$$
+
+Como isso precisa valer para **qualquer** escolha de $(\Delta x, \Delta y, \Delta z)$ que satisfaça a condição de luz, cada coeficiente entre parênteses tem que se anular individualmente:
+
+$$
+M_{00}\delta_{ij} + M_{ij} = 0 \quad\Longrightarrow\quad M_{ij} = -M_{00}\delta_{ij}, \quad i,j = 1,2,3 \quad \text{(1.4b)}
+$$
+
+Ou seja: a matriz espacial precisa ser **diagonal**, e todas as entradas da diagonal têm que ser iguais a $-M_{00}$. Substituindo essa condição de volta na Eq. 1.2, a expressão gigante de 16 termos colapsa para algo muito mais simples:
 
 $$
 \Delta \bar s^2 = M_{00}\left[(\Delta t)^2 - (\Delta x)^2 - (\Delta y)^2 - (\Delta z)^2\right] = -M_{00}\Delta s^2
