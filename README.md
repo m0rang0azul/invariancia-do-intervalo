@@ -197,11 +197,22 @@ Isso já é um resultado e tanto: descobrimos que o intervalo medido por $\bar O
 
 Para mostrar que $\phi(v) = 1$, Schutz usa um argumento geométrico em duas etapas. A primeira etapa mostra que $\phi$ não pode depender da *direção* de $v$, só do seu módulo $|v|$.
 
-A ideia: imagine uma barra em repouso no referencial $\bar O$, orientada **perpendicularmente** à velocidade relativa entre $O$ e $\bar O$ (por exemplo, ao longo do eixo $y$, se o movimento relativo é na direção $x$). O comprimento dessa barra, medido por $\bar O$, é o intervalo entre dois eventos simultâneos nas duas pontas da barra, e, como vimos na Eq. 1.5, esse intervalo se relaciona com o intervalo medido por $O$ através de $\phi(v)$:
+A ideia: imagine uma barra em repouso no referencial $\bar O$, orientada **perpendicularmente** à velocidade relativa entre $O$ e $\bar O$ (por exemplo, ao longo do eixo $y$, se o movimento relativo é na direção $x$). 
+
+<p align="center">
+  <img src="figura-1-6.gif" alt="Figura 1.6 do Schutz: Régua em Repouso em O (Eixo y)" width="300">
+</p>
+
+
+O comprimento dessa barra, medido por $\bar O$, é o intervalo entre dois eventos simultâneos nas duas pontas da barra, e, como vimos na Eq. 1.5, esse intervalo se relaciona com o intervalo medido por $O$ através de $\phi(v)$:
 
 $$
 (\text{comprimento da barra em } O)^2 = \phi(v)(\text{comprimento da barra em } \bar O)^2 \quad \text{(1.6)}
 $$
+
+<p align="center">
+  <img src="figura-1-7-com-cone-v2.gif" alt="Figura 1.7 do Schutz com Cones de Luz (P e Q)" width="400">
+</p>
 
 Aqui entra o **princípio da relatividade**: o comprimento de uma barra perpendicular ao movimento não pode depender da *direção* em que o referencial se move, só da rapidez relativa. Não existe uma direção "especial" no espaço; se o movimento fosse, digamos, para a direita em vez de para a esquerda, a física tem que ser a mesma. Isso força:
 
@@ -217,7 +228,11 @@ ou seja, $\phi$ só pode ser função da velocidade relativa, nunca de "para que
 
 A segunda etapa usa o mesmo princípio da relatividade, mas de um jeito mais sutil, comparando três referenciais em vez de dois.
 
-Imagine três observadores: $O$, $\bar O$, e um terceiro, $O''$. O referencial $\bar O$ se move com velocidade $v$ na direção $x$ em relação a $O$. O referencial $O''$ se move com velocidade $v$ na direção **negativa** de $x$ em relação a $\bar O$. Ou seja: $\bar O$ se afasta de $O$ para a direita, e $O''$ se afasta de $\bar O$ para a esquerda, com a **mesma rapidez** $v$.
+Imagine três observadores: $O$, $\bar O$, e um terceiro, $O''$ = $\bar{\bar O}$. O referencial $\bar O$ se move com velocidade $v$ na direção $x$ em relação a $O$. O referencial $O''$ se move com velocidade $v$ na direção **negativa** de $x$ em relação a $\bar O$. Ou seja: $\bar O$ se afasta de $O$ para a direita, e $O''$ se afasta de $\bar O$ para a esquerda, com a **mesma rapidez** $v$.
+
+<p align="center">
+  <img src="figura-1-7-tres-observadores.gif" alt="Simetria: Observadores O_bar (+v) e O_duas_barras (-v)" width="400">
+</p>
 
 O truque geométrico é notar que, com essa configuração, $O''$ acaba sendo **idêntico** a $O$, ele volta a ficar em repouso relativo a $O$ (a velocidade "ida" e "volta" se cancelam). Usando a Eq. 1.5 duas vezes em sequência (de $O$ para $\bar O$, e depois de $\bar O$ para $O''$):
 
@@ -271,8 +286,16 @@ Como $\Delta s^2$ é uma propriedade **apenas dos dois eventos**, o mesmo valor 
 
 Essa classificação não é só um rótulo, ela é a base geométrica de toda a estrutura causal da relatividade (o "cone de luz" que separa passado, futuro e o que nunca poderá influenciar um evento). Vale a pena explorar isso com calma num próximo post.
 
+<p align="center">
+  <img src="figura-1-8.gif" alt="Figura 1.8 — O Cone de Luz de A" width="400">
+</p>
+
 ---
 
 ## Referências
 
 - SCHUTZ, Bernard. *A First Course in General Relativity*. 3ª ed. Cambridge: Cambridge University Press, 2022. Capítulo 1, Seção 1.6.
+
+---
+
+*Post baseado no experimento mental do relógio de luz e nos diagramas de Minkowski, seguindo a abordagem do livro de Bernard Schutz, "A First Course in General Relativity".*
