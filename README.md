@@ -1,5 +1,7 @@
 # Invariância do Intervalo: Por Que o Espaço-Tempo Tem uma Régua Própria
 
+Luana M. Souza
+
 *Uma explicação passo a passo da Seção 1.6 de Bernard Schutz, o teorema mais importante da Relatividade Especial*
 
 > **Antes de começar:** este post assume que você já leu [Geometria do Espaço-Tempo: O Experimento do Relógio de Luz](../relogio-de-luz), onde construímos os eixos $t,x$ e $\bar t, \bar x$ e vimos por que eles ficam inclinados um em relação ao outro. Aqui resolvemos o problema que ficou pendente: **sabemos a direção dos eixos, mas ainda não sabemos a escala**, ou seja, um "metro" no eixo $\bar t$ corresponde a quantos metros no eixo $t$?
@@ -24,7 +26,7 @@ $$
 \Delta r = \sqrt{(\Delta x)^2 + (\Delta y)^2 + (\Delta z)^2}
 $$ 
 
-Imagine $\Delta r$ como sendo o comprimeto do vetor que liga o ponto evento de emissão $E$ ao evento de reflexão $P$. Assim, num intervalo de tempo $\Delta t$, a velocidade da luz é:
+Imagine $\Delta r$ como sendo o comprimento do vetor que liga o ponto evento de emissão $E$ ao evento de reflexão $P$. Assim, num intervalo de tempo $\Delta t$, a velocidade da luz é:
 
 $$
 \frac{\Delta r}{\Delta t} = 1 \quad\Longrightarrow\quad \Delta r = \Delta t \quad\Longrightarrow\quad (\Delta x)^2 + (\Delta y)^2 + (\Delta z)^2 - (\Delta t)^2 = 0
@@ -56,16 +58,16 @@ Pense nisso como uma versão do teorema de Pitágoras para o espaço-tempo, só 
 
 ## 4. Por que a transformação entre referenciais tem que ser quadrática
 
-**Hipótese de partida (linearidade):** como $O$ e $\bar O$ se movem um em relação ao outro com velocidade constante, sem aceleração, assumimos que a relação entre as coordenadas dos dois é **linear**, e que as origens coincidem (o evento "$t=x=y=z=0$" é o mesmo que "$\bar t = \bar x = \bar y = \bar z = 0$"). Fisicamente, isso vem da ideia de que o espaço-tempo é homogêneo: as leis da física não têm um "lugar preferido", então a transformação entre coordenadas não pode ter termos que dependam da posição absoluta, só combinações lineares dos incrementos.
+**Hipótese de partida (linearidade):** como $O$ e $\bar O$ se movem um em relação ao outro com velocidade constante, sem aceleração, assumimos que a relação entre as coordenadas dos dois é **linear**, e que as origens coincidem (o evento $t=x=y=z=0$ é o mesmo que $\bar t = \bar x = \bar y = \bar z = 0$). Fisicamente, isso vem da ideia de que o espaço-tempo é homogêneo: as leis da física não têm um "lugar preferido", então a transformação entre coordenadas não pode ter termos que dependam da posição absoluta, só combinações lineares dos incrementos.
 
 Isso significa que cada incremento com barra é uma combinação linear dos incrementos sem barra:
 
 $$
 \begin{aligned}
-\Delta \bar t &= a_0\,\Delta t + a_1\,\Delta x + a_2\,\Delta y + a_3\,\Delta z \\
-\Delta \bar x &= b_0\,\Delta t + b_1\,\Delta x + b_2\,\Delta y + b_3\,\Delta z \\
-\Delta \bar y &= c_0\,\Delta t + c_1\,\Delta x + c_2\,\Delta y + c_3\,\Delta z \\
-\Delta \bar z &= d_0\,\Delta t + d_1\,\Delta x + d_2\,\Delta y + d_3\,\Delta z
+\Delta \bar t &= a_0\Delta t + a_1\Delta x + a_2\Delta y + a_3\Delta z \\
+\Delta \bar x &= b_0\Delta t + b_1\Delta x + b_2\Delta y + b_3\Delta z \\
+\Delta \bar y &= c_0\Delta t + c_1\Delta x + c_2\Delta y + c_3\Delta z \\
+\Delta \bar z &= d_0\Delta t + d_1\Delta x + d_2\Delta y + d_3\Delta z
 \end{aligned}
 $$
 
@@ -80,7 +82,7 @@ $$
 Cada um dos quatro termos do lado direito é o **quadrado** de uma combinação linear dos incrementos sem barra, com o termo $(\Delta \bar t)^2$ gerando 10 produtos (4 quadrados + 6 produtos cruzados, contando cada cruzado duas vezes). Fazendo isso para os quatro termos e somando tudo, o resultado, depois de agrupar os termos semelhantes, é necessariamente uma **forma quadrática geral** nos incrementos sem barra:
 
 $$
-\Delta \bar s^2 = \sum_{\alpha=0}^{3}\sum_{\beta=0}^{3} M_{\alpha\beta}\,(\Delta x^\alpha)(\Delta x^\beta) \quad \text{(1.2)}
+\Delta \bar s^2 = \sum_{\alpha=0}^{3}\sum_{\beta=0}^{3} M_{\alpha\beta}(\Delta x^\alpha)(\Delta x^\beta) \quad \text{(1.2)}
 $$
 
 onde usamos a notação compacta $x^0 = t,\ x^1 = x,\ x^2 = y,\ x^3 = z$, e cada coeficiente $M_{\alpha\beta}$ é alguma combinação dos produtos $a_i a_j$, $b_i b_j$, etc. (por isso $M_{\alpha\beta}$ pode depender de $v$, mas não das coordenadas). Para entender de onde vem a Eq. 1.2, vamos expandir o termo temporal $(\Delta \bar{t})^2$. Substituindo as transformações lineares, obtemos uma soma de 16 termos. Agrupando-os na forma matricial, temos:
@@ -95,7 +97,7 @@ a_3 a_0 \Delta z \Delta t & a_3 a_1 \Delta z \Delta x & a_3 a_2 \Delta z \Delta 
 \end{pmatrix}
 $$
 
-Essa mesma estrutura se repete para $(\Delta \bar{x})^2$, $(\Delta \bar{y})^2$ e $(\Delta \bar{z})^2$. Somando todas as contribuições e agrupando os termos semelhantes, chegamos à forma quadrática geral da Eq. 1.2, onde a matriz completa $\(M_{\alpha\beta}\)$ contém todos esses coeficientes combinados.
+Essa mesma estrutura se repete para $(\Delta \bar{x})^2$, $(\Delta \bar{y})^2$ e $(\Delta \bar{z})^2$. Somando todas as contribuições e agrupando os termos semelhantes, chegamos à forma quadrática geral da Eq. 1.2, onde a matriz completa $M_{\alpha\beta}$ contém todos esses coeficientes combinados.
 
 Um detalhe técnico que ajuda a simplificar: como só a **soma** $M_{\alpha\beta} + M_{\beta\alpha}$ aparece na Eq. 1.2 quando $\alpha \ne \beta$ (afinal, $M_{01}\Delta t \Delta x + M_{10}\Delta x \Delta t$ é a mesma coisa que $(M_{01}+M_{10})\Delta t \Delta x$), podemos, sem perda de generalidade, **redefinir** os coeficientes de forma que a matriz seja simétrica: $M_{\alpha\beta} = M_{\beta\alpha}$. Isso não muda a física, só deixa a contabilidade mais limpa, em vez de 16 coeficientes independentes, ficamos com 10 (4 na diagonal + 6 fora da diagonal, já que cada par simétrico conta uma vez).
 
@@ -112,10 +114,25 @@ $$
 para **qualquer** direção espacial do raio de luz (ele pode ir para qualquer lado, não só ao longo de um eixo). Substituindo $\Delta t = \Delta r$ na Eq. 1.2 e expandindo, obtemos (depois de reorganizar):
 
 $$
-\Delta \bar s^2 = M_{00}(\Delta r)^2 + 2\sum_{i=1}^{3} M_{0i}\,\Delta x^i\,\Delta r + \sum_{i=1}^{3}\sum_{j=1}^{3} M_{ij}\,\Delta x^i \Delta x^j
+\Delta \bar s^2 = M_{00}(\Delta r)^2 + 2\sum_{i=1}^{3} M_{0i}\Delta x^i\Delta r + \sum_{i=1}^{3}\sum_{j=1}^{3} M_{ij}\Delta x^i \Delta x^j = 0
 $$
 
-Essa expressão precisa ser **zero para qualquer direção** do vetor $(\Delta x, \Delta y, \Delta z)$, não só para uma direção específica. Pense bem no que isso exige: se o raio de luz for disparado na direção $+x$, temos $\Delta y = \Delta z = 0$ e a equação vira uma relação envolvendo só $M_{00}, M_{01}, M_{11}$. Se disparado na direção $-x$, o termo cruzado $M_{01}\,\Delta x\,\Delta r$ **troca de sinal** (porque $\Delta x$ trocou de sinal, mas $\Delta r$ continua positivo, é uma distância), enquanto os termos quadráticos ($M_{00}(\Delta r)^2$ e $M_{11}(\Delta x)^2$) não mudam. Para a soma continuar dando zero nas duas direções opostas, o termo que muda de sinal é **obrigado a ser zero por si só**. Repetindo esse raciocínio para as direções $y$ e $z$ (e depois para combinações de direções), a única saída é:
+Essa expressão precisa ser **zero para qualquer direção** do vetor $(\Delta x, \Delta y, \Delta z)$, não só para uma direção específica. Pense bem no que isso exige: se o raio de luz for disparado na direção $+x$, temos $\Delta y = \Delta z = 0$ e a equação vira uma relação envolvendo só $M_{00}, M_{01}, M_{11}$. Se disparado na direção $-x$, o termo cruzado $M_{01}\Delta x\Delta r$ **troca de sinal** (porque $\Delta x$ trocou de sinal, mas $\Delta r$ continua positivo, é uma distância), enquanto os termos quadráticos ($M_{00}(\Delta r)^2$ e $M_{11}(\Delta x)^2$) não mudam. 
+
+
+Na dirção $+x$
+
+$$
+\Delta \bar s^2 = M_{00}(\Delta r)^2 + 2\sum_{i=1}^{3} M_{0i}\Delta x^i\Delta r + \sum_{i=1}^{3}\sum_{j=1}^{3} M_{ij}\Delta x^i \Delta x^j = 0
+$$
+
+Na direção $-x$
+
+$$
+\Delta \bar s^2 = M_{00}(\Delta r)^2 - 2\sum_{i=1}^{3} M_{0i}\Delta x^i\Delta r + \sum_{i=1}^{3}\sum_{j=1}^{3} M_{ij}\Delta x^i \Delta x^j = 0
+$$
+
+Para a soma continuar dando zero nas duas direções opostas (iguale as equações), o termo que muda de sinal é **obrigado a ser zero por si só**. Repetindo esse raciocínio para as direções $y$ e $z$ (e depois para combinações de direções), a única saída é:
 
 $$
 M_{0i} = 0, \quad i = 1,2,3 \quad \text{(1.4a)}
@@ -124,13 +141,13 @@ $$
 Ou seja: **não pode haver termos cruzados entre tempo e espaço** na matriz. Com isso, o que resta da equação (agora só com $M_{00}$ e os $M_{ij}$) precisa dar zero para qualquer direção espacial, o que só é possível se:
 
 $$
-M_{ij} = -M_{00}\,\delta_{ij}, \quad i,j = 1,2,3 \quad \text{(1.4b)}
+M_{ij} = -M_{00}\delta_{ij}, \quad i,j = 1,2,3 \quad \text{(1.4b)}
 $$
 
 onde $\delta_{ij}$ é o **delta de Kronecker** (vale 1 se $i=j$, e 0 caso contrário), em outras palavras, a matriz espacial precisa ser **diagonal**, e todas as entradas da diagonal têm que ser iguais a $-M_{00}$. Substituindo essas duas condições de volta na Eq. 1.2, a expressão gigante de 16 termos que você expandiu nas suas notas colapsa para algo muito mais simples:
 
 $$
-\Delta \bar s^2 = M_{00}\left[(\Delta t)^2 - (\Delta x)^2 - (\Delta y)^2 - (\Delta z)^2\right] = -M_{00}\,\Delta s^2
+\Delta \bar s^2 = M_{00}\left[(\Delta t)^2 - (\Delta x)^2 - (\Delta y)^2 - (\Delta z)^2\right] = -M_{00}\Delta s^2
 $$
 
 ---
@@ -140,7 +157,7 @@ $$
 Definimos $\phi(v) \equiv -M_{00}$. Como esse coeficiente só pode depender da velocidade relativa $v$ entre os referenciais (nunca das coordenadas dos eventos), chegamos ao resultado central desta parte da demonstração:
 
 $$
-\Delta \bar s^2 = \phi(v)\, \Delta s^2 \quad \text{(1.5)}
+\Delta \bar s^2 = \phi(v) \Delta s^2 \quad \text{(1.5)}
 $$
 
 Isso já é um resultado e tanto: descobrimos que o intervalo medido por $\bar O$ é sempre **proporcional** ao intervalo medido por $O$, e a constante de proporcionalidade só pode depender da velocidade relativa entre eles. Falta provar que essa constante é exatamente $1$, é isso que vem agora.
@@ -154,7 +171,7 @@ Para mostrar que $\phi(v) = 1$, Schutz usa um argumento geométrico em duas etap
 A ideia: imagine uma barra em repouso no referencial $\bar O$, orientada **perpendicularmente** à velocidade relativa entre $O$ e $\bar O$ (por exemplo, ao longo do eixo $y$, se o movimento relativo é na direção $x$). O comprimento dessa barra, medido por $\bar O$, é o intervalo entre dois eventos simultâneos nas duas pontas da barra, e, como vimos na Eq. 1.5, esse intervalo se relaciona com o intervalo medido por $O$ através de $\phi(v)$:
 
 $$
-(\text{comprimento da barra em } O)^2 = \phi(v)\,(\text{comprimento da barra em } \bar O)^2 \quad \text{(1.6)}
+(\text{comprimento da barra em } O)^2 = \phi(v)(\text{comprimento da barra em } \bar O)^2 \quad \text{(1.6)}
 $$
 
 Aqui entra o **princípio da relatividade**: o comprimento de uma barra perpendicular ao movimento não pode depender da *direção* em que o referencial se move, só da rapidez relativa. Não existe uma direção "especial" no espaço; se o movimento fosse, digamos, para a direita em vez de para a esquerda, a física tem que ser a mesma. Isso força:
@@ -176,13 +193,13 @@ Imagine três observadores: $O$, $\bar O$, e um terceiro, $O''$. O referencial $
 O truque geométrico é notar que, com essa configuração, $O''$ acaba sendo **idêntico** a $O$, ele volta a ficar em repouso relativo a $O$ (a velocidade "ida" e "volta" se cancelam). Usando a Eq. 1.5 duas vezes em sequência (de $O$ para $\bar O$, e depois de $\bar O$ para $O''$):
 
 $$
-\Delta \bar s^2 = \phi(v)\,\Delta s^2 \qquad \text{e} \qquad \Delta s''^2 = \phi(v)\,\Delta \bar s^2
+\Delta \bar s^2 = \phi(v)\Delta s^2 \qquad \text{e} \qquad \Delta s''^2 = \phi(v)\Delta \bar s^2
 $$
 
 Substituindo a primeira na segunda:
 
 $$
-\Delta s''^2 = \phi(v)\,\phi(v)\,\Delta s^2 = [\phi(v)]^2\,\Delta s^2
+\Delta s''^2 = \phi(v)\phi(v)\Delta s^2 = [\phi(v)]^2\Delta s^2
 $$
 
 Mas como $O''$ e $O$ são o mesmo referencial, $\Delta s''^2$ e $\Delta s^2$ têm que ser **iguais**. Logo:
