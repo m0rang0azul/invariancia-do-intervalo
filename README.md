@@ -4,7 +4,7 @@ Luana M. Souza
 
 *Uma explicação passo a passo da Seção 1.6 de Bernard Schutz, o teorema mais importante da Relatividade Especial*
 
-> **Antes de começar:** este post assume que você já leu [Geometria do Espaço-Tempo: O Experimento do Relógio de Luz](../relogio-de-luz), onde construímos os eixos $t,x$ e $\bar t, \bar x$ e vimos por que eles ficam inclinados um em relação ao outro. Aqui resolvemos o problema que ficou pendente: **sabemos a direção dos eixos, mas ainda não sabemos a escala**, ou seja, um "metro" no eixo $\bar t$ corresponde a quantos metros no eixo $t$?
+> **Antes de começar:** este post assume que você já leu [Geometria do Espaço-Tempo: O Experimento do Relógio de Luz](https://github.com/m0rang0azul/Relatividade-Geral---Diagrama-de-Minkowski), onde construímos os eixos $t,x$ e $\bar t, \bar x$ e vimos por que eles ficam inclinados um em relação ao outro. Aqui resolvemos o problema que ficou pendente: **sabemos a direção dos eixos, mas ainda não sabemos a escala**, ou seja, um "metro" no eixo $\bar t$ corresponde a quantos metros no eixo $t$?
 
 ---
 
