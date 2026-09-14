@@ -226,15 +226,21 @@ ou seja, $\phi$ só pode ser função da velocidade relativa, nunca de "para que
 
 ## 8. Segunda parte da prova: $\phi(v) = 1$
 
-A segunda etapa usa o mesmo princípio da relatividade, mas de um jeito mais sutil, comparando três referenciais em vez de dois.
+A segunda etapa usa o mesmo princípio da relatividade, mas de um jeito mais sutil, comparando três referenciais em vez de dois. Imagine três observadores: $O$, $\bar O$, e um terceiro, $O'' \equiv \bar{\bar O}$. O referencial $\bar O$ se move com velocidade $v$ na direção $x$ em relação a $O$. O referencial $O''$ se move com velocidade $v$ na direção **negativa** de $x$ em relação a $\bar O$. Ou seja: $\bar O$ se afasta de $O$ para a direita, e $O''$ se afasta de $\bar O$ para a esquerda, com a **mesma rapidez** $v$.
 
-Imagine três observadores: $O$, $\bar O$, e um terceiro, $O''$ = $\bar{\bar O}$. O referencial $\bar O$ se move com velocidade $v$ na direção $x$ em relação a $O$. O referencial $O''$ se move com velocidade $v$ na direção **negativa** de $x$ em relação a $\bar O$. Ou seja: $\bar O$ se afasta de $O$ para a direita, e $O''$ se afasta de $\bar O$ para a esquerda, com a **mesma rapidez** $v$.
+1. O GIF abaixo representa o diagrama de Minkowisk para um terceiro observador $O''$, viajando em relação à $O$ com uma velocidade $v$ na direção negatitiva de $x$. Agora, o que aconteceria se esse mesmo observador $O''$, viaja-se a uma velocidade $v$ na direção negativa $x$ em relação $\bar O$?
 
 <p align="center">
   <img src="figura-1-7-tres-observadores.gif" alt="Simetria: Observadores O_bar (+v) e O_duas_barras (-v)" width="400">
 </p>
 
-O truque geométrico é notar que, com essa configuração, $O''$ acaba sendo **idêntico** a $O$, ele volta a ficar em repouso relativo a $O$ (a velocidade "ida" e "volta" se cancelam). Usando a Eq. 1.5 duas vezes em sequência (de $O$ para $\bar O$, e depois de $\bar O$ para $O''$):
+2. O truque geométrico é notar que, com essa configuração, $O''$ acaba sendo **idêntico** a $O$, ele volta a ficar em repouso relativo a $O$ (a velocidade "ida" e "volta" se cancelam).
+
+<p align="center">
+  <img src="transformacao-tres-observadores.gif" alt="Demonstração Geométrica: Boosts Relativos - Passo 1: Referencial O em Repouso" width="400">
+</p>
+
+Usando a Eq. 1.5 duas vezes em sequência (de $O$ para $\bar O$, e depois de $\bar O$ para $O''$):
 
 $$
 \Delta \bar s^2 = \phi(v)\Delta s^2 \qquad \text{e} \qquad \Delta s''^2 = \phi(v)\Delta \bar s^2
