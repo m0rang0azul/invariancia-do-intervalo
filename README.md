@@ -204,7 +204,7 @@ A ideia: imagine uma barra em repouso no referencial $\bar O$, orientada **perpe
 </p>
 
 
-O comprimento dessa barra, medido por $\bar O$, é o intervalo entre dois eventos simultâneos nas duas pontas da barra, e, como vimos na Eq. 1.5, esse intervalo se relaciona com o intervalo medido por $O$ através de $\phi(v)$:
+O comprimento dessa barra, medido por $\bar O$, é o intervalo entre dois eventos simultâneos nas duas pontas da barra (a reflexão dos fótons em $A$ e $B$ emitidos simultaneamente do ponto $P$), e, como vimos na Eq. 1.5, esse intervalo se relaciona com o intervalo medido por $O$ através de $\phi(v)$:
 
 $$
 (\text{comprimento da barra em } \bar O)^2 = \phi(v)(\text{comprimento da barra em } O)^2 \quad \text{(1.6)}
