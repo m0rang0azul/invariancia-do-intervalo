@@ -8,7 +8,7 @@ Luana M. Souza
 
 ---
 
-## 1. O problema: faltava uma régua
+## 1. O problema: faltava uma régua, $\Delta s^2$.
 
 Quando desenhamos os eixos $\bar t$ e $\bar x$ inclinados, resolvemos *onde* eles apontam. Mas um eixo inclinado, sozinho, não é o suficiente para fazer contas, falta saber a **escala**: se eu marco 1 metro no eixo $\bar t$, isso corresponde a quantos metros medidos no papel de $O$?
 
