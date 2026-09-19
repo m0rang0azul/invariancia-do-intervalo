@@ -183,7 +183,7 @@ $$
 
 ## 6. Batizando a função $\phi(v)$
 
-Definimos $\phi(v) \equiv -M_{00}$. Como esse coeficiente só pode depender da velocidade relativa $v$ entre os referenciais, nunca das coordenadas dos eventos (princípio da homogeneidade do espaço-tempo, não existem posições nem momentos especiais no espaço), chegamos ao resultado central desta parte da demonstração:
+Definimos $\phi(v) \equiv -M_{00}$. Como esse coeficiente só pode depender da velocidade relativa $v$ entre os referenciais, nunca das coordenadas dos eventos (princípio da homogeneidade do espaço-tempo, não existem posições nem momentos especiais no espaço). Assim, podemos escrever:
 
 $$
 \Delta \bar s^2 = \phi(v) \Delta s^2 \quad \text{(1.5)}
